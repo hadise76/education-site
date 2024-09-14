@@ -11,10 +11,10 @@ export default function Layout({ children }) {
 
   return (
     <div className="flex flex-col min-h-screen">
-      {/* نمایش هدر به جز در صفحه لاگین */}
+
       {!isLoginPage && <Header />}
       <main className="flex-grow">{children}</main>
-      {/* نمایش فوتر به جز در صفحه لاگین */}
+
       {!isLoginPage && <Footer />}
     </div>
   );
