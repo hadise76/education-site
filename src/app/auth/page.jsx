@@ -1,10 +1,12 @@
-import React from 'react'
-import CheckPhone from '../components/auth/CheckPhone'
+import CheckPhone from "../components/auth/CheckPhone";
+
 
 const page = () => {
-    return(
-        <CheckPhone/>
-    )
-}
+  return (
+    <>
+      <CheckPhone />
+    </>
+  );
+};
 
-export default page
+export default page;

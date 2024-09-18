@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const Header = () => {
 
-    
+  
 
   return (
     <div className="pt-8">
@@ -36,15 +36,11 @@ const Header = () => {
         </div> */}
         {/* دکمه‌ها */}
       <div className="flex space-x-5">
+        
         <Link href="/auth">
-        <button className="bg-white text-[#729C33] px-4 py-2 rounded border-[1px] border-[#729C33] hover:bg-[#729C33] hover:text-white transition-colors ml-2">
-          ورود معلم
-        </button>
-        </Link>
-        <Link href="/auth">
-        <button className="bg-[#729C33] text-white hover:bg-white hover:text-[#729C33] hover:border-[1px] hover:border-[#729C33] px-4 py-2 rounded  transition-colors">
-          ورود دانش آموز
-        </button>
+          <button className="bg-[#729C33] text-white hover:bg-white hover:text-[#729C33] hover:border-[1px] hover:border-[#729C33] px-8 py-2 rounded  transition-colors">
+            ورود 
+          </button>
         </Link>
       </div>
       </header>
