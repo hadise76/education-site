@@ -1,11 +1,15 @@
-"use client"
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Image from "next/image";
-import Link from 'next/link'
+import Link from "next/link";
+import Cookies from "js-cookie";
 
 const Header = () => {
+  const token = Cookies.get("token");
 
-  
+  useEffect(() => {
+    
+  }, []);
 
   return (
     <div className="pt-8">
@@ -20,29 +24,15 @@ const Header = () => {
             width={600}
             height={500}
             alt="Picture of the author"
-            
           />
         </div>
-
-        {/* دکمه ورود */}
-        {/* <div>
+        <div className="flex space-x-5">
           <Link href="/auth">
-          <button 
-          
-          className="bg-[#729C33] hover:bg-white hover:text-[#729C33] hover:border-[#729C33] hover:border-[1px] text-white font-bold py-2 px-4 rounded">
-            ورود
-          </button>
+            <button className="bg-[#729C33] text-white hover:bg-white hover:text-[#729C33] hover:border-[1px] hover:border-[#729C33] px-8 py-2 rounded  transition-colors">
+              ورود
+            </button>
           </Link>
-        </div> */}
-        {/* دکمه‌ها */}
-      <div className="flex space-x-5">
-        
-        <Link href="/auth">
-          <button className="bg-[#729C33] text-white hover:bg-white hover:text-[#729C33] hover:border-[1px] hover:border-[#729C33] px-8 py-2 rounded  transition-colors">
-            ورود 
-          </button>
-        </Link>
-      </div>
+        </div>
       </header>
     </div>
   );
