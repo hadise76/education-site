@@ -1,9 +1,18 @@
+"use client"
+import Cookies from "js-cookie";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+
 
 export default function Home() {
+  const token = Cookies.get("token");
+
+
   return (
     <>
+    
+    
       <main className="p-4">
         {/* تصویر کلاس درس */}
         <section className="bg-gray-200">
@@ -40,18 +49,6 @@ export default function Home() {
             با دیگران فراهم می‌کند و می‌تواند به بهبود وضعیت تحصیلی و اجتماعی
             آن‌ها کمک کند.
           </p>
-        </section>
-
-        {/* بخش ثبت‌نام */}
-        <section className="p-6 bg-[#8eae5cb3] text-center mt-8">
-          <h3 className="text-xl font-semibold mb-4 text-gray-800">
-            برای ثبت‌نام و استفاده از خدمات سایت ابتدا وارد شوید
-          </h3>
-          <Link href="/auth">
-            <button className="bg-[#729C33] hover:bg-white hover:text-[#729C33] text-white font-bold py-2 px-4 rounded">
-              ورود به سایت
-            </button>
-          </Link>
         </section>
       </main>
     </>

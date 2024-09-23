@@ -3,6 +3,7 @@ import Fields from '../components/courses/Fields'
 
 const page = () => {
   return (
+    
     <Fields />
   )
 }
