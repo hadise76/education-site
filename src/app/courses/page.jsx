@@ -1,10 +1,10 @@
 import React from 'react'
-import Fields from '../components/courses/Fields'
+import FindClass from '../components/courses/FindClass'
 
 const page = () => {
   return (
     
-    <Fields />
+    <FindClass />
   )
 }
 
